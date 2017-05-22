@@ -8,9 +8,9 @@ using StockManager.Models;
 
 namespace StockManager.Data
 {
-    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+    public class StockManagerContext : DbContext
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+        public StockManagerContext(DbContextOptions<StockManagerContext> options)
             : base(options)
         {
         }
